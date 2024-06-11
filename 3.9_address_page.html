@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>addresspage</title>
+        <script>           
+            function myfunction1(){
+         document.write("<b>***Your order has been placed***.<BR><br>Our delivery partner will soon reach out to you.<BR>");
+         document.write("<br>THANK YOU FOR SHOPPING WITH FRESH TO HOME</b>");
+        document.body.style.backgroundImage="url('tk.png')"
+    }
+             </script>
+        <style>
+            body{
+                background-image: url(vg.jpg);background-size: cover;background-image: linear-gradient(to left,rgba(240, 244, 237, 0.1),rgb(239, 241, 230)),url(vg.jpg);
+                background-color: bisque;
+            }
+            ul li {
+                list-style: circle;
+                display: inline;
+                padding: 10px;
+            }
+            ul li a:hover{
+                 color: aqua;
+            }
+            ul li a:active{
+                color: black;
+            }
+            div{
+                width: 200px;
+                height: auto;
+                padding-left: 500px;
+                padding-top: 50px;
+             font-size: 20;
+             font-style: oblique;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="1_Home_page.html">Home</a></li>
+                <li><a href="2_contactus_page.html">Contact us</a></li>
+                    <li><a href="3_Order_page.html">Orders</a></li>
+                    <li><a href="./4_Register_page.html">Register</a></li>
+                    <li><a href="7_AboutUs_page.html">About</a></li>
+            </ul><hr>
+            <h1 style="text-align: center;">Order Confirmation</h1>
+        </header>
+        <div>
+            <center>
+        <section>
+        Select Date Of delivery:<br>
+        <input type="date" value="date"><br>
+        Mobile Number:<br>
+        <input type="tel"  name="personal" id="per1" pattern="[0-9]{10}"placeholder="ph-no" title=""the ten digits number ><br>
+        Email-id:<br>
+        <input type="email" name="email" id="pers"placeholder="email"><br>
+        State:<br>
+        <input type=""name="st"placeholder="State"><br>
+        City:<br>
+        <input type=""name="city"placeholder="city"><br>
+        Your-Address:<br>
+        <textarea value="textar" cols="30" rows="5">Address</textarea><br>
+        <br>
+        <button type="button" onclick="myfunction1()">Confirm Order</button>
+    </section>
+</center>
+</div>
+    </body>
+</html>
